@@ -48,8 +48,8 @@ var HomePage = React.createClass({
         <div id="wrapper" className="content">
 
           <Navbar brand={<span><img src={require('../../../common/img/logo.png')} alt="Start React" title="Start React" />
-            <span>&nbsp;Factory of the Future</span>
-           
+            <span>&nbsp;SB Admin React - </span>
+            <a href="http://startreact.com/" title="Start React" rel="home">StartReact.com</a>
             <button type="button" className="navbar-toggle" onClick={this.toggleMenu} style={{position: 'absolute', right: 0, top: 0}}>
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar"></span>
@@ -176,8 +176,8 @@ var HomePage = React.createClass({
               <div className="sidebar-nav navbar-collapse">
                 
                 <ul className="nav in" id="side-menu">
-                {/*
-                  <li className="sidebar-search">
+
+                  {/*<li className="sidebar-search">
                     <div className="input-group custom-search-form">
                       <input type="text" className="form-control" placeholder="Search..." />
                       <span className="input-group-btn">
@@ -186,14 +186,17 @@ var HomePage = React.createClass({
                         </button>
                       </span>
                     </div>
-                  </li>*/}
+                  </li>
+                */}
               
                   <li>
                     <Link to="dashboard.home"><i className="fa fa-dashboard fa-fw"></i> &nbsp;Dashboard</Link>
                   </li>
-                     
-                      {/*   
-                  <li className={classNames({'active': !this.state.chartsElementsCollapsed})}>
+                   <li> 
+                    <Link to="dashboard.tables"><i className="fa fa-table fa-fw"></i> &nbsp;Tables</Link>
+                  </li> 
+                        
+                  {/*<li className={classNames({'active': !this.state.chartsElementsCollapsed})}>
                     <a href="javascript:void(0)" onClick={ () => { this.setState({chartsElementsCollapsed: !this.state.chartsElementsCollapsed}); return false; } }>
                       <i className="fa fa-bar-chart-o fa-fw"></i> &nbsp;Charts<span className="fa arrow"></span>
                     </a>
@@ -206,12 +209,11 @@ var HomePage = React.createClass({
                       </li>
                     </ul>
                   </li>
-              */}
-
+              
                   <li> 
                     <Link to="dashboard.tables"><i className="fa fa-table fa-fw"></i> &nbsp;Tables</Link>
                   </li> 
-              {/*
+              
                   <li> 
                     <Link to="dashboard.forms"><i className="fa fa-edit fa-fw"></i> Forms</Link> 
                   </li>
@@ -290,8 +292,8 @@ var HomePage = React.createClass({
                     
                   <li>
                     <a href="http://www.strapui.com/">Premium React Themes</a>
-                  </li>
-*/}
+                  </li> */}
+
                 </ul>
 
               </div>
